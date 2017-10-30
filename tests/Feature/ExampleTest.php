@@ -22,6 +22,6 @@ class ExampleTest extends TestCase
     public function testProductsList() {
 
         $this->get(route('products'))
-             ->assertResponceOk();
+             ->assertResponseOk();
     }
 }
