@@ -21,6 +21,8 @@ class ExampleTest extends TestCase
 
     public function testProductsList() {
 
+        $products = factory(App\Product::class, 3)->create();
+
         $this->get(route('api.products.index'))
              ->assertResponseOk();
     }
