@@ -16,7 +16,7 @@ use Faker\Generator as Faker;
 $factory->define(App\Product::class, function ($faker) {
 
     return [
-        'name' => $faker->string,
+        'name' => $faker->word,
     ];
 });
 
