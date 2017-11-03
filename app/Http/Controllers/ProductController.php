@@ -28,6 +28,20 @@ class ProductController extends Controller
     */
 
     public function store(Request $request) {
+        return Product::create([
+            'name' => $request->inout('name')
+        ]);
+    }
 
-    
+    /**
+    * Update the specified resource in storage.
+    *
+    * @param Request $request
+    * @param int $id
+    * @param Response
+    */
+
+    public function update(Request $request, $id) {
+        //
+    }
 }
